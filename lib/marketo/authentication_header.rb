@@ -26,7 +26,7 @@ module Grabcad
 
       private
       def request_timestamp
-        @time.to_s
+        @time.strftime('%Y-%m-%dT%H:%M:%S%z')
       end
 
       def calculate_signature
